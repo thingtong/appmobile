@@ -1,0 +1,26 @@
+<!--
+  Generated template for the CoursedetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar transparent></ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div *ngFor="let data of responsedata">
+      <img src="http://192.168.1.38/combindrestapi/images/{{data.images}}" alt="">
+    <div padding>
+      <ion-card-title>
+        {{data.name}}
+      </ion-card-title>
+      <div [innerHTML]="data.description"></div>
+      <p>price {{data.price}} baht</p>
+      <p>Date : {{data.create_at}} </p>
+    </div>
+  </div>
+</ion-content>
