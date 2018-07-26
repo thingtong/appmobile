@@ -17,7 +17,7 @@ export class WebapiServiceProvider {
  constructor(
    public http: Http, 
    public toast:ToastController) {
-   this.baseUrl = "http://192.168.1.38/combindrestapi/";
+   this.baseUrl = "http://192.168.1.50/combindrestapi/";
  }
 
 // Post Method
